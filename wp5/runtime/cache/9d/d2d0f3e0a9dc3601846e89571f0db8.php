@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+think_serialize:a:3:{i:0;a:5:{s:10:"table_name";s:10:"wp_publics";s:8:"key_rule";s:40:"wpcache_wp_publics_public_id-[public_id]";s:9:"map_field";s:31:"{"public_id":"gh_fd7d36352d19"}";s:10:"data_field";s:2:"id";s:5:"extra";s:0:"";}i:1;a:5:{s:10:"table_name";s:10:"wp_publics";s:8:"key_rule";s:18:"wpcache_wp_publics";s:9:"map_field";s:2:"[]";s:10:"data_field";s:8:"id,appid";s:5:"extra";s:0:"";}i:2;a:5:{s:10:"table_name";s:10:"wp_publics";s:8:"key_rule";s:26:"wpcache_wp_publics_id-[id]";s:9:"map_field";s:11:"{"id":"23"}";s:10:"data_field";s:0:"";s:5:"extra";s:0:"";}}

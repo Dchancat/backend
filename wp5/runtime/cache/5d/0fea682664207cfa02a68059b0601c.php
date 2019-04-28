@@ -1,0 +1,10 @@
+<?php
+//000000086400
+ exit();?>
+think_serialize:a:21:{s:2:"id";i:1235;s:4:"name";s:10:"auto_reply";s:5:"title";s:12:"自动回复";s:6:"extend";i:0;s:8:"relation";s:0:"";s:7:"need_pk";i:1;s:10:"field_sort";s:41:"["img_id","group_id","content","keyword"]";s:11:"field_group";s:8:"1:基础";s:14:"attribute_list";N;s:13:"template_list";s:0:"";s:12:"template_add";s:0:"";s:13:"template_edit";s:0:"";s:9:"list_grid";s:157:"keyword:关键词
+text_id:文本
+group_id:图文
+img_id:图片
+voice_id:语音
+video_id:视频
+ids:操作:[EDIT]&type=[msg_type]|编辑,[DELETE]|删除";s:8:"list_row";i:10;s:10:"search_key";s:0:"";s:11:"search_list";s:0:"";s:11:"create_time";i:0;s:11:"update_time";i:0;s:6:"status";i:0;s:11:"engine_type";s:6:"MyISAM";s:5:"addon";s:0:"";}

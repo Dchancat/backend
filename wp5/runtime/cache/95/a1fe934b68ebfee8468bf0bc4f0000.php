@@ -1,0 +1,13 @@
+<?php
+//000000000000
+ exit();?>
+think_serialize:a:39:{s:14:"WEB_SITE_TITLE";s:9:"WeiPHP5.0";s:20:"WEB_SITE_DESCRIPTION";s:72:"weiphp微信小程序版是一套完整的有前端和后端的CMS框架";s:16:"WEB_SITE_KEYWORD";s:78:"weiphp,互联网+,微信开源开发框架，微信小程序，小程序开发";s:14:"WEB_SITE_CLOSE";s:1:"1";s:16:"CONFIG_TYPE_LIST";a:5:{i:0;s:6:"数字";i:1;s:6:"字符";i:2;s:6:"文本";i:3;s:6:"数组";i:4;s:6:"枚举";}s:12:"WEB_SITE_ICP";s:0:"";s:11:"COLOR_STYLE";s:13:"default_color";s:17:"CONFIG_GROUP_LIST";a:4:{i:1;s:6:"基本";i:3;s:6:"用户";i:6;s:6:"开发";i:99;s:6:"高级";}s:10:"HOOKS_TYPE";a:2:{i:1;s:6:"视图";i:2;s:9:"控制器";}s:11:"AUTH_CONFIG";a:2:{s:7:"AUTH_ON";s:1:"1";s:9:"AUTH_TYPE";s:1:"2";}s:9:"LIST_ROWS";s:2:"20";s:16:"DATA_BACKUP_PATH";s:7:"./Data/";s:21:"DATA_BACKUP_PART_SIZE";s:8:"20971520";s:20:"DATA_BACKUP_COMPRESS";s:1:"1";s:26:"DATA_BACKUP_COMPRESS_LEVEL";s:1:"9";s:12:"DEVELOP_MODE";s:1:"0";s:15:"REPLY_LIST_ROWS";s:2:"20";s:14:"ADMIN_ALLOW_IP";s:0:"";s:15:"SHOW_PAGE_TRACE";s:1:"0";s:15:"WEB_SITE_VERIFY";s:1:"1";s:6:"ACCESS";s:181:"Home/User/*
+Home/Index/*
+Home/Help/*
+home/weixin/*
+admin/File/*
+home/File/*
+home/Forum/*
+Home/Material/detail
+public_bind/public_bind/setTicket
+public_bind/public_bind/test";s:20:"SYSTEM_UPDATE_REMIND";s:1:"0";s:22:"SYSTEM_UPDATRE_VERSION";s:8:"20181213";s:16:"FOLLOW_YOUKE_UID";s:5:"-9013";s:9:"COPYRIGHT";s:42:"版本由圆梦云科技有限公司所有";s:11:"SYSTEM_LOGO";s:0:"";s:11:"TONGJI_CODE";s:0:"";s:15:"SENSITIVE_WORDS";s:10:"bitch,shit";s:9:"REG_AUDIT";s:1:"0";s:11:"PUBLIC_BIND";s:1:"0";s:15:"COMPONENT_APPID";s:18:"wxedd687dfab20466a";s:19:"COMPONENT_APPSECRET";s:32:"d159ffea0012654a0cefaf91991ff6ed";s:5:"APPID";s:0:"";s:9:"APPSECRET";s:0:"";s:19:"USER_ALLOW_REGISTER";s:1:"0";s:15:"IS_QRCODE_LOGIN";s:1:"0";s:15:"DEFAULT_PUBLICS";s:0:"";s:11:"REQUEST_LOG";s:1:"1";s:16:"ENCODING_AES_KEY";s:43:"DfEqNBRvzbg8MJdRQCSGyaMp6iLcGOldKFT0r8I6Tnp";}
