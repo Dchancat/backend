@@ -7,10 +7,6 @@ use think\model\concern\SoftDelete;
 
 class Cate extends Model
 {
-    protected $pk = 'id';
-    protected $connection = 'db_config1';
-    protected $table = 'tp_cate';
-
     //软删除
     use SoftDelete;
  
@@ -27,7 +23,6 @@ class Cate extends Model
 	    return $validate->getError();
 	}
 	$result = $this->allowField(true)->save($data);
-#	return $result;
 	if($result){
 	    return 1;
 	}else {

@@ -51,5 +51,48 @@ class Member extends Model
             return '会员修改失败';
         }
     }
+    
+      //会员注册
+    public function register($data)
+    {
+        $validate = new \app\common\validate\Member();
+        if(!$validate->scene('register')->check($data)){
+            return $validate->getError();
+        }
+        $result = $this->allowField(true)->save($data);
+        if($result){
+            return 1;
+        }else {
+            return '注册失败';
+        }
+    }
+
+    public function login($data)
+    {
+         $validate = new \app\common\validate\Member;
+         if (!$validate->scene('login')->check($data)){
+             return $validate->getError();
+         }
+	unset($data['verify']);
+        $result = $this->where($data)->find();//s.parents is not a function
+
+        if ($result){
+            //判断用户是否可用
+          #  if ($result['status'] != 1){
+           #     return '此用户已被禁用';
+            #}
+
+            $sessionData = [
+                'id' => $result['id'],
+                'nickname' => $result['nickname'],
+            ];
+            session('index',$sessionData);
+            return 1;
+        }else {
+            return '用户名或者密码错误';
+        }
+    }
+
+    
 
 }

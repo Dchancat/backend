@@ -1,3 +1,19 @@
+# 链接
+- 博客：http:hm.5lazy.cn
+- github:https://github.com/Dchancat/tpblog
+
+# 简介
+可作为初学thinkphp的同学们的参考源代码；  
+
+# 使用说明
+ 修改config/database.php中数据库名用户密码后可用；
+
+# 项目介绍
+简单的博客项目系统
+框架：TP5、layui
+第三方插件：PHPMail邮件；
+验证码插件think-captcha
+
 ![](https://box.kancloud.cn/5a0aaa69a5ff42657b5c4715f3d49221) 
 
 ThinkPHP 5.1（LTS版本） —— 12载初心，你值得信赖的PHP框架

@@ -24,7 +24,6 @@ class Admin extends Validate
 
     public function sceneRegister()
     {
-#	return $this->only(['username','password','conpass','nickname','email']);
 	return $this->only(['username','password','conpass','nickname','email'])->append('username','unique:admin');
 
     }
@@ -36,7 +35,6 @@ class Admin extends Validate
    
     public function sceneAdd()
     {
-#       return $this->only(['username','password','conpass','nickname','email']);
         return $this->only(['username','password','conpass','nickname','email'])->append('username','unique:admin');
     }
     

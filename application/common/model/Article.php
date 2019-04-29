@@ -7,10 +7,6 @@ use think\model\concern\SoftDelete;
 
 class Article extends Model
 {
-    protected $pk = 'id';
-    protected $connection = 'db_config1';
-    protected $table = 'tp_article';
-
 
     //软删除
     use SoftDelete;

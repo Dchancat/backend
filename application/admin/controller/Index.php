@@ -22,7 +22,7 @@ class Index extends Controller
     public function login()
     {
 	if (request()->isAjax()){
-	    $username = input('post.username');
+#	    $username = input('post.username');
 #	    $password = input('post.password');
 	    $data = [
 		'username' => input('post.username'),
@@ -30,20 +30,17 @@ class Index extends Controller
 	    ];
      	  //@1@2@3 调用common模块模型里的login方法
 #            use \app\common\model\Admin;@1
-	   $result = new Admin();//@2
-	   $res = $result->login($data);//@3 
-
-#          $query = Db::query("select * from tp_admin where status=1 ");
-#	   $res = Admin::where($data)->find();//返回结果为null为什么？
-#	   $res = Db::name('admin')->where('username','=',$username)->find();
-#           $res = Db::name('admin')->where($data)->select();
-#	   if ($res){
+	   $res = new Admin();//@2
+	   $result = $result->login($data);//@3 
+#	   $result = Db::name('admin')->where('username','=',$username)->find();
+#           $result = Db::name('admin')->where($data)->select();
+#	   if ($result){
 #	   if($query){
-	   if($res ==1 ){
+	   if($result ==1 ){
 		$this->success('登录成功!','admin/home/index');
  #               # $this->success($msg='登陆成功!',$url='admin/home/index');
            }else {
-                $this->error($res);
+                $this->error($result);
            }
 	}
 	return view();
@@ -63,14 +60,12 @@ class Index extends Controller
 	    ];
 	    
 	  #  $result = model('Admin')->register($data);		
-	    $result = new Admin();//@2
-            $res = $result->register($data);//@3
-
-	  #  return $result;
-	    if ($res == 1) {
+	    $res = new Admin();//@2
+            $result = $result->register($data);//@3
+	    if ($result == 1) {
 		$this->success('注册成功你的账户是：'.$data['username'],'admin/index/login');
 	    }else {
-		$this->error($res);
+		$this->error($result);
 	    }
 
 	}

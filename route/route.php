@@ -9,17 +9,19 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-Route::get('think', function () {
-    return 'hello,ThinkPHP5!';
-});
 
-Route::get('hello/:name', 'index/hello');
+//前台路由
+Route::rule('cates/:id','index/index/index','get');
+Route::rule('/','index/index/index','get');
+Route::rule('article-<:id>','index/article/info','get');
+Route::rule('register','index/index/register','get|post');
+Route::rule('login','index/index/login','get|post');
+Route::rule('logout','index/index/logout','post');
+Route::rule('search','index/index/search','get');
+Route::rule('comment','index/article/comment','post');
 
-return [
-
-];
-
-Route:group('admin',function(){
+//后台路由
+Route::group('admin',function(){
     Route::rule('/', 'admin/index/login', 'get|post');
     Route::rule('index', 'admin/home/index', 'get');
     Route::rule('register', 'admin/index/register', 'get|post');
@@ -48,6 +50,5 @@ Route:group('admin',function(){
     Route::rule('commentlist','admin/comment/list','get');
     Route::rule('commentdel','admin/comment/del','post');
     Route::rule('set','admin/system/set','get|post');
-        
 });
 

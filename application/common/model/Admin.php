@@ -8,10 +8,6 @@ use think\model\concern\SoftDelete;
 
 class Admin extends Model
 {
-
-    protected $pk = 'id';
-    protected $connection = 'db_config1';
-    protected $table = 'tp_admin';
     use SoftDelete;
 
     public function login($data)
@@ -22,12 +18,8 @@ class Admin extends Model
          }
 
 #	$result = $this->where($data)->select();
-	$result = $this->where($data)->find();//s.parents is not a function
-#	$result = Admin::where($data)->select();//POST 500错误
-#	$result = Admin::where('status',1)->find();
-#	$result = Db::query("select * from tp_admin where username=admin01");
-#        $result = Db::name('admin')->where($data)->select();
-#        $result = Db::name('admin')->where('status',1)->select();
+	$result = $this->where($data)->find();
+#       $result = Db::name('admin')->where($data)->select();
 
 	if ($result){
 	    //判断用户是否可用

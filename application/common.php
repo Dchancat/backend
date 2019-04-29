@@ -49,3 +49,9 @@ function replace($data)
 {
     return str_replace('span','a',$data);
 }
+
+//把字符串转换为数组
+function strtoArray($data)
+{
+    return explode('|',$data);
+}

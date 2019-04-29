@@ -3,8 +3,6 @@
 namespace app\admin\controller;
 
 use think\Controller;
-#use \app\common\model\Admin;
-#use think\Db;
 
 class Base extends Controller
 {
