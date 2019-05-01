@@ -25,17 +25,10 @@ class Index extends Controller
 #	    $username = input('post.username');
 #	    $password = input('post.password');
 	    $data = [
-		'username' => input('post.username'),
+		'username' => trim(input('post.username')),
 		'password' => input('post.password'),
 	    ];
-     	  //@1@2@3 调用common模块模型里的login方法
-#            use \app\common\model\Admin;@1
-	   $res = new Admin();//@2
-	   $result = $result->login($data);//@3 
-#	   $result = Db::name('admin')->where('username','=',$username)->find();
-#           $result = Db::name('admin')->where($data)->select();
-#	   if ($result){
-#	   if($query){
+	    $result = model('Admin')->login($data);
 	   if($result ==1 ){
 		$this->success('登录成功!','admin/home/index');
  #               # $this->success($msg='登陆成功!',$url='admin/home/index');
@@ -59,9 +52,9 @@ class Index extends Controller
 		'email'    => input('post.email')
 	    ];
 	    
-	  #  $result = model('Admin')->register($data);		
-	    $res = new Admin();//@2
-            $result = $result->register($data);//@3
+	    $result = model('Admin')->register($data);		
+	  #  $res = new Admin();//@2
+           # $result = $result->register($data);//@3
 	    if ($result == 1) {
 		$this->success('注册成功你的账户是：'.$data['username'],'admin/index/login');
 	    }else {
@@ -76,7 +69,7 @@ class Index extends Controller
     public function forgot()
     {
 	if (request()->isAjax()){
-	    $captcha = mt_rand(1000,9999);
+	    $captcha = mt_rand(100000,999900);
 	    session('captcha',$captcha);
 	    $data = [
 	    	'email' => input('post.email'),

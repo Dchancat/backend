@@ -17,9 +17,9 @@ return [
     // 数据库名
     'database'        => 'tp_blog',
     // 用户名
-    'username'        => 'root',
+    'username'        => 'tpblog',
     // 密码
-    'password'        => 'root',
+    'password'        => 'tpblog.chan99',
 
     // 端口
     'hostport'        => '3306',

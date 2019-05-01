@@ -7,12 +7,12 @@ use think\Validate;
 class Member extends Validate
 {
     protected $rule = [
-	'username|用户名'=> 'require',
-	'password|密码'  => 'require',
+	'username|用户名'=> 'require|max:25|alphaDash',
+	'password|密码'  => 'require|min:6|max:16',
 	'conpass|确认密码'=>'require|confirm:password',
-	'oldpwd|原密码'  => 'require',
-	'newpwd|新密码'  => 'require',
-	'nickname|昵称'  => 'require',
+	'oldpwd|原密码'  => 'require|min:6|max:16',
+	'newpwd|新密码'  => 'require|min:6|max:16',
+	'nickname|昵称'  => 'require|max:25|alphaDash',
         'email|邮箱'     => 'require|email',
 	'verify|验证码'  => 'require|captcha'
     ];

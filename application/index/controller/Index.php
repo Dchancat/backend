@@ -51,7 +51,7 @@ class Index extends Base
     {
         if (request()->isAjax()){
             $data = [
-                'username' => input('post.username'),
+                'username' => trim(input('post.username')),
                 'password' => input('post.password'),
 		'verify'  => input('post.verify')
             ];

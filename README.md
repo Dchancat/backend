@@ -7,7 +7,8 @@
 
 # 使用说明
  将项目内的所有文件直接放在根目录下
- 修改config/database.php中数据库名用户密码后可用；
+ 导入数据库文件tp_blog.sql
+ 修改config/database.php中数据库名用户密码后可用;
 
 # 项目介绍
 简单的博客项目系统

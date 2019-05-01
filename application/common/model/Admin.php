@@ -16,10 +16,7 @@ class Admin extends Model
          if (!$validate->scene('login')->check($data)){
              return $validate->getError();
          }
-
-#	$result = $this->where($data)->select();
 	$result = $this->where($data)->find();
-#       $result = Db::name('admin')->where($data)->select();
 
 	if ($result){
 	    //判断用户是否可用

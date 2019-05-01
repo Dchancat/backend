@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>老婵的个人博客后台</title>
-    <link rel="shortcut icon" href="/static/admin/img/logo4.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/admin/img/logo.jpg" type="image/x-icon">
     <link href="/static/admin/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/static/admin/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/static/admin/css/weather-icons.min.css" rel="stylesheet" />
@@ -53,7 +53,7 @@
     <script src="/static/admin/js/slimscroll/jquery.slimscroll.min.js"></script>
     <!--Beyond Scripts-->
     <script src="/static/admin/js/beyond.js"></script>
-    <script src="/static/admin/lib/layer/layer.js"></script>
+    <script src="/static/lib/layer/layer.js"></script>
 
     <script>
         $(window).bind("load", function () {
@@ -86,7 +86,7 @@
                         }else {
                             layer.open({
                                 title:'注册失败',
-                                content:data,
+                                content:data.msg,
                                 icon:5,
                                 anim:6
                             });

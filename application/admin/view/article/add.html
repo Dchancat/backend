@@ -96,11 +96,12 @@
 
 </div>
 {include file="public/_js" /}
-<script src="/static/admin/lib/ueditor/ueditor.config.js"></script>
-<script src="/static/admin/lib/ueditor/ueditor.all.js"></script>
+<script src="/static/lib/ueditor/ueditor.config.js"></script>
+<script src="/static/lib/ueditor/ueditor.all.js"></script>
 <script>
     $(function () {
-        UE.getEditor('content');
+	window.UEDITOR_HOME_URL = "/static/lib/ueditor/php/upload/img/";
+         var vu = UE.getEditor('content');
 
          $('#articleAdd').click(function () {
             $.ajax({
