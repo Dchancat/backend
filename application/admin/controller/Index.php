@@ -26,7 +26,7 @@ class Index extends Controller
 #	    $password = input('post.password');
 	    $data = [
 		'username' => trim(input('post.username')),
-		'password' => input('post.password'),
+		'password' => trim(input('post.password')),
 	    ];
 	    $result = model('Admin')->login($data);
 	   if($result ==1 ){

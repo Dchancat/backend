@@ -1,5 +1,4 @@
 # 链接
-- 博客：http:hm.5lazy.cn
 - github:https://github.com/Dchancat/tpblog
 
 # 简介
